@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'gipsierokracxed';
+    src: url('fonts/gipsiero_kracxed-webfont.woff2') format('woff2'),
+         url('fonts/gipsiero_kracxed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font: 2em "gipsierokracxed", serif;
+    color: blue
+}
+
+div {
+    font: 1em "gipsierokracxed";
+    background-color: orange;
+}
