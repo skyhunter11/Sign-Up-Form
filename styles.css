@@ -6,13 +6,12 @@
     font-style: normal;
 }
 
-
-h1 {
-    font: 2em "gipsierokracxed", serif;
-    color: blue
-}
-
-div {
-    font: 1em "gipsierokracxed";
-    background-color: orange;
-}
+.left-panel {
+    flex-grow: 1;
+    position: relative;
+    width: 60vw;
+    min-width: 345px;
+    height: 100vh;
+    background: url(./background-image.jpg);
+    background-size: cover;
+  }
