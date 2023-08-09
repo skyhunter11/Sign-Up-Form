@@ -6,8 +6,22 @@
     font-style: normal;
 }
 
+h1 {
+    font-family: 'gipsierokracxed';
+    justify-content: center;
+    border: solid blue;
+  }
+
 body {
     display: flex;
+    border: solid blue;
+}
+
+img {
+    width: 50vh;
+    height: 40vh;
+
+    border: solid blue;
 }
 
 .left-panel {
@@ -22,6 +36,13 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+
+    border: solid blue;
   }
 
-  
+  .logo {
+    background-color: rgba(0, 0, 0, 0.527);
+    display: flex;
+
+    border: solid blue;
+  }
