@@ -6,12 +6,22 @@
     font-style: normal;
 }
 
+body {
+    display: flex;
+}
+
 .left-panel {
     flex-grow: 1;
     position: relative;
-    width: 60vw;
+    width: 40vw;
     min-width: 345px;
     height: 100vh;
-    background: url(./background-image.jpg);
+    background: url(assets/background-image.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
   }
+
+  
