@@ -10,24 +10,44 @@ h1 {
     font-family: 'gipsierokracxed';
     justify-content: center;
     border: solid blue;
+    font-size: 3em;
   }
 
 body {
     display: flex;
+    margin: 0;
     border: solid blue;
 }
 
-img {
-    width: 50vh;
-    height: 40vh;
+form {
+  border: solid blue;
+}
 
-    border: solid blue;
+div {
+  border: solid blue;
+}
+
+div .logo {
+  margin-bottom: auto;
+  margin-top: 10px;
+  height: 215px;
+}
+
+.logo div {
+  display: flex;
+  align-items: center;
+}
+
+img {
+    width: 40vh;
+    height: 30vh;
+    margin-right: -60px;
 }
 
 .left-panel {
     flex-grow: 1;
     position: relative;
-    width: 40vw;
+    width: 60vw;
     min-width: 345px;
     height: 100vh;
     background: url(assets/background-image.jpg);
@@ -36,13 +56,9 @@ img {
     justify-content: center;
     align-items: center;
     color: white;
-
-    border: solid blue;
   }
 
   .logo {
     background-color: rgba(0, 0, 0, 0.527);
     display: flex;
-
-    border: solid blue;
   }
