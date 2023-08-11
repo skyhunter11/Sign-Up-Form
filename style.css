@@ -1,26 +1,27 @@
 @font-face {
-    font-family: 'gipsierokracxed';
-    src: url('fonts/gipsiero_kracxed-webfont.woff2') format('woff2'),
-         url('fonts/gipsiero_kracxed-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'gipsierokracxed';
+  src: url('fonts/gipsiero_kracxed-webfont.woff2') format('woff2'),
+       url('fonts/gipsiero_kracxed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1 {
+  font-family: 'gipsierokracxed';
+  border: solid blue;
+  font-size: 3em;
+  margin: 0;
   display: flex;
-    font-family: 'gipsierokracxed';
-    border: solid blue;
-    font-size: 3em;
+  }
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.527);
+  display: flex;
   }
 
 body {
-    display: flex;
-    margin: 0;
-    border: solid blue;
-}
-
-
-form {
+  display: flex;
+  margin: 0;
   border: solid blue;
 }
 
@@ -33,41 +34,62 @@ div .logo {
   margin-top: 10px;
   height: 215px;
   width: 500px;
+  border-radius: 15px;
 }
 
-.logo div {
+div .logo div {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 img {
-    width: 40vh;
-    height: 30vh;
-    min-width: 250px;
-    min-height: 250px;
-    margin-right: -50px;
+  width: 40vh;
+  height: 30vh;
+  min-width: 250px;
+  min-height: 250px;
+  margin-right: -50px;
+}
+
+form {
+  border: solid blue;
 }
 
 .left-panel {
-    position: relative;
-    width: 40vw;
-    height: 100vh;
-    min-width: 420px;
-    background: url(assets/background-image.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  width: 40vw;
+  height: 100vh;
+  min-width: 420px;
+  background: url(assets/background-image.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
   }
 
   .right-panel {
+    display: flex;
     width: 60vw;
     height: 100vh;
-    border: solid red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 2;
+    background-color: rgb(240, 240, 240);
   }
 
-  .logo {
-    background-color: rgba(0, 0, 0, 0.527);
+  .input-section {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.2rem 2vw 3rem 2vw;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+  }
+
+  form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    font-size: 1rem;
   }
