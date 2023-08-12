@@ -1,5 +1,5 @@
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'kionaregular', Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -8,6 +8,24 @@
        url('fonts/gipsiero_kracxed-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'kionaitallic';
+  src: url('fonts/kiona/kiona-itallic-webfont.woff2') format('woff2'),
+       url('fonts/kiona/kiona-itallic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'kionaregular';
+  src: url('fonts/kiona/kiona-regular-webfont.woff2') format('woff2'),
+       url('fonts/kiona/kiona-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 h1 {
@@ -38,7 +56,6 @@ div .logo {
   margin-top: 10px;
   height: 215px;
   width: 500px;
-  border-radius: 15px;
 }
 
 div .logo div {
@@ -99,6 +116,8 @@ form {
     padding: 1.2rem 2vw 3rem 2vw;
     background-color: white;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+
+    margin: 50px 0px;
   }
 
   form {
@@ -110,7 +129,8 @@ form {
 
   button {
     font-size: 1.3rem;
-    background-color: #e35624;
+    /* background-color: #e35624; */
+    background-color: #ba623c;
     border-radius: 5px;
     border: none;
     color: white;
