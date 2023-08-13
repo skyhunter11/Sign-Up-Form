@@ -130,6 +130,19 @@ form {
     margin-top: 3px;
   }
 
+  input:focus {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    outline: none;
+  }
+
+  input:invalid:focus {
+    border: 1px solid rgb(255, 69, 100)
+  }
+
+  input:valid:focus {
+    border: 1px solid green;
+  }
+
 
 
   .input-section {
@@ -160,4 +173,8 @@ form {
     color: white;
     padding: .8rem 1.5em;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+  }
+
+  button:hover {
+    background-color: #C78162;
   }
