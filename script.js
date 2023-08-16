@@ -11,7 +11,7 @@ const confirm = document.querySelector("#confirm");
 //error references
 const firstname_error = document.querySelector("#firstname_error");
 const lastname_error = document.querySelector("#lastname_error");
-const email_error = document.querySelector("email_error");
+const email_error = document.querySelector("#email_error");
 const tel_error = document.querySelector("#tel_error");
 const password_error = document.querySelector("#password_error");
 const confirm_error = document.querySelector("#confirm_error");
@@ -37,6 +37,15 @@ email.addEventListener("input", function(event){
         email_error.textContent = "Please enter a valid email";
     } else {
         email_error.textContent = "";
+    }
+});
+
+
+tel.addEventListener("input", function(event) {
+    if (tel.validity.patternMismatch) {
+        tel_error.textContent = "Please enter a 10 digit phone number";
+    } else {
+        tel_error.textContent = "";
     }
 });
 
