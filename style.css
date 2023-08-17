@@ -29,6 +29,16 @@
 
 }
 
+body{
+  font-size: 1.2rem;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  width:100vw;
+}
+
+
 h1 {
   font-family: 'gipsierokracxed';
   /* border: solid blue; */
@@ -41,16 +51,6 @@ h1 {
   background-color: rgba(0, 0, 0, 0.527);
   display: flex;
   }
-
-body {
-  display: flex;
-  margin: 0;
-  /* border: solid blue; */
-}
-
-div {
-  /* border: solid blue; */
-}
 
 div .logo {
   margin-bottom: auto;
@@ -74,7 +74,10 @@ img {
 }
 
 form {
-  /* border: solid blue; */
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1rem;
 }
 
 .left-panel {
@@ -87,11 +90,14 @@ form {
   justify-content: center;
   align-items: center;
   color: white;
+
+  flex-grow: 1;
+  position: relative;
   }
+
 
   .right-panel {
     font-size: 1.5rem;
-
     display: flex;
     width: 60vw;
     height: 100vh;
@@ -102,18 +108,16 @@ form {
     background-color: rgb(240, 240, 240);
   }
 
+
   .header {
     font-weight: 600;
-    margin-top: -20px;
+    margin-top: 0px;
   }
 
   .header, .submit-section {
     padding: 0px 2vw;
   }
 
-  .submit-section {
-
-  }
 
   label {
     position: relative;
@@ -143,8 +147,6 @@ form {
     border: 1px solid green;
   }
 
-
-
   .input-section {
     display: flex;
     justify-content: center;
@@ -153,14 +155,6 @@ form {
     background-color: white;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
     margin: 40px 0px;
-  }
-
-  form {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1rem;
-    font-size: 1rem;
-    /* width: 60vw; This caused form to overflow into right of webpage*/
   }
 
   button[type="submit"] {
@@ -183,4 +177,34 @@ form {
     font-family: 'kionaregular';
     font-size: .7rem;
     color: rgb(255, 69, 100);
+  }
+
+  @media screen and (max-width: 850px) {
+
+    body {
+      flex-direction: column;
+    }
+    .left-panel {
+      width: 100vw;
+      height: 20rem;
+    }
+  
+    .header div, .input-section, .submit-section div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .form-section, form, .submit-section{
+      width: 100vw;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 505px) {
+  
+    label {
+      margin-bottom: 25px;
+    }
   }
