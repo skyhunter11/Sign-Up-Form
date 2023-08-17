@@ -49,3 +49,48 @@ tel.addEventListener("input", function(event) {
     }
 });
 
+password.addEventListener("input", function (event) {
+    if (password.validity.patternMismatch){
+      const currentValue = password.value;
+      const regExpCap = /[A-Z]/g;
+      const regExpDig = /[0-9]/g;
+      let result = '';
+      if (regExpCap.test(currentValue)){
+        result += '';
+      } else {
+        result += `Missing at least 1 capital letter. `;
+        result += '\n';
+      }
+
+
+      if (regExpDig.test(currentValue)){
+        result += '';
+      } else {
+        result += 'Missing at least 1 number. ';
+        result += '\n';
+      }
+
+      if (currentValue.length < 9){
+        result += 'Password must be at least 8 characters. '
+        result += '\n';
+      } else {
+        result += '';
+      }
+
+      console.log(result);
+      password_error.textContent = result;
+
+
+    } else {
+      password_error.textContent = '';
+    }
+  });
+
+  confirm.addEventListener("input", function (event) {
+    if (confirm.value !== password.value) {
+      confirm_error.textContent = 'Passwords do not match';
+    } else {
+      confirm_error.textContent = '';
+    }
+  }); 
+

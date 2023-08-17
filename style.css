@@ -163,7 +163,7 @@ form {
     /* width: 60vw; This caused form to overflow into right of webpage*/
   }
 
-  button {
+  button[type="submit"] {
     font-size: 1.3rem;
     font-family: 'kionaregular';
     /* background-color: #e35624; */
@@ -175,7 +175,7 @@ form {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
   }
 
-  button:hover {
+  button[type="submit"]:hover {
     background-color: #C78162;
   }
 
