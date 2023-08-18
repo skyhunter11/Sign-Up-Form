@@ -38,34 +38,20 @@ body{
   width:100vw;
 }
 
-
-h1 {
-  font-family: 'gipsierokracxed';
-  font-size: 3rem;
-  margin: 0;
-  display: flex;
-  }
-
-/* div .logo {
-  margin-bottom: auto;
-  margin-top: 10px;
-  height: 215px;
-  width: 500px;
-} */
-
 .left-panel {
+  flex-grow: 1;
+  position: relative;
+
   width: 40vw;
-  height: 100vh;
   min-width: 420px;
+  height: 100vh;
+
   background: url(assets/background-image.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-
-  flex-grow: 1;
-  position: relative;
   }
 
 .left-panel div {
@@ -76,14 +62,29 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
   margin-bottom: auto;
-  margin-top: 10px;
+  margin-top: 30px;
+  height: 180px;
 }
 
+h1 {
+  font-family: 'gipsierokracxed';
+  font-size: 2.5rem;
+  margin: 0;
+  display: flex;
+  }
+
 .left-panel img {
-  width: 10rem;
-  padding: 0px;
+  width: 11rem;
+  padding: 10px;
+}
+
+.left-panel p {
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.575);
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
 }
 
 /* img {
@@ -96,6 +97,7 @@ h1 {
 
 form {
   display: flex;
+  width: 60vw;
   flex-flow: row wrap;
   gap: 1rem;
   font-size: 1rem;
@@ -115,10 +117,10 @@ form {
 
   .header {
     font-weight: 600;
-    margin-top: 0px;
   }
 
   .header, .submit-section {
+    font-size: 1.3rem;
     padding: 0px 2vw;
   }
 
@@ -199,7 +201,7 @@ form {
       justify-content: center;
     }
   
-    .form-section, form, .submit-section{
+    .right-panel, form, .submit-section{
       width: 100vw;
       justify-content: center;
     }
